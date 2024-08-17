@@ -2,8 +2,8 @@
 
 how to run?
 
-```conda create -n venv python=3.8 -y
-
+```
+conda create -n venv python=3.10 -y
 ```
 
 ```
