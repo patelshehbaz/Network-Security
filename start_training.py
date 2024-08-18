@@ -1,15 +1,18 @@
 import os
 import sys
-from networksecurity.exception.exception import NetworkSecurityException  # Import custom exception
-from networksecurity.logger.logger import logging  # Import custom logging (though it's not used in this script)
 
-from networksecurity.pipeline import TrainingPipeline
+from networksecurity.exception.exception import NetworkSecurityException
+from networksecurity.logger.logger import logging
+
+from networksecurity.pipeline.training_pipeline import TrainingPipeline
+
 
 def start_training():
     try:
-        pass
+        model_training=TrainingPipeline()
+        model_training.run_pipeline()
     except Exception as e:
         raise NetworkSecurityException(e,sys)
-
-if __name__ == '__main__':
+    
+if __name__=='__main__':
     start_training()
