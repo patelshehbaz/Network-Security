@@ -16,7 +16,7 @@ from sklearn.model_selection import train_test_split  # Function to split data i
 from dotenv import load_dotenv  # Library to load environment variables
 load_dotenv()  # Load the .env file containing environment variables
 MONGO_DB_URL = os.getenv("MONGO_DB_URL")  # Get the MongoDB URL from the environment variables
-print(MONGO_DB_URL)  # Print the MongoDB URL for verification
+#print(MONGO_DB_URL)  # Print the MongoDB URL for verification
 
 # Class to handle data ingestion
 class DataIngestion:

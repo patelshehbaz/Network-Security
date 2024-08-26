@@ -4,8 +4,8 @@ import os
 from networksecurity.constant import training_pipeline
 
 # Print the name of the pipeline and the directory where artifacts will be stored
-print(training_pipeline.PIPELINE_NAME)
-print(training_pipeline.ARTIFACT_DIR)
+#print(training_pipeline.PIPELINE_NAME)
+#print(training_pipeline.ARTIFACT_DIR)
 
 # Class to configure the training pipeline
 class TrainingPipelineConfig:
