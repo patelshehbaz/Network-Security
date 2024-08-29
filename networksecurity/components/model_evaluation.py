@@ -9,6 +9,7 @@ from networksecurity.utils.main_utils.utils import save_object,load_object,write
 from networksecurity.utils.ml_utils.model.estimator import ModelResolver
 from networksecurity.constant.training_pipeline import TARGET_COLUMN
 import pandas  as  pd
+
 class ModelEvaluation:
     def __init__(self,model_eval_config:ModelEvaluationConfig,
                     data_validation_artifact:DataValidationArtifact,
@@ -90,7 +91,7 @@ class ModelEvaluation:
 
             model_eval_report = model_evaluation_artifact.__dict__
             
-            print(model_eval_report)
+            #print(model_eval_report)
 
             #save the report
             #dir_path=os.path.dirname(self.model_eval_config.model_evaluation_dir)

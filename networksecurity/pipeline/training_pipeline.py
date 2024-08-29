@@ -18,8 +18,7 @@ from networksecurity.entity.config_entity import(
     DataTransformationConfig,
     ModelTrainerConfig,
     ModelEvaluationConfig,
-    ModelPusherConfig
-   
+    ModelPusherConfig   
 )
 
 from networksecurity.entity.artifact_entity import (
@@ -117,7 +116,7 @@ class TrainingPipeline:
             if not model_eval_artifact.is_model_accepted:
                 #raise Exception("Trained model is not better than the best model")
                 print("Trained model is not better than the best model")
-            print(model_eval_artifact)
+            #print(model_eval_artifact)
         except Exception as e:
             raise NetworkSecurityException(e,sys)
         
