@@ -9,6 +9,7 @@ import pandas as pd
 import os,sys
 
 class DataValidation:
+
     def __init__(self,data_ingestion_artifact:DataIngestionArtifact,
                  data_validation_config:DataValidationConfig):
         
@@ -18,8 +19,7 @@ class DataValidation:
             self._schema_config = read_yaml_file(SCHEMA_FILE_PATH)
         except Exception as e:
             raise NetworkSecurityException(e,sys)
-    
-    
+        
     def validate_number_of_columns(self,dataframe:pd.DataFrame)->bool:
         try:
             number_of_columns = len(self._schema_config["columns"])
@@ -141,5 +141,4 @@ class DataValidation:
             return data_validation_artifact
         except Exception as e:
             raise NetworkSecurityException(e,sys)
-        
         

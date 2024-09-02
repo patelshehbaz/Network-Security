@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 logs/*
 Artifacts/*
+networksecurity.egg-info/*
+__pycache__
