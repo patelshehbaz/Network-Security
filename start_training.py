@@ -17,4 +17,4 @@ def start_training():
         raise NetworkSecurityException(e,sys)
     
 if __name__=='__main__':
-    start_training()    
+    start_training()   

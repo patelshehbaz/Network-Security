@@ -1,11 +1,9 @@
-# Import necessary libraries to create data structures for storing artifacts
 from dataclasses import dataclass
 
-# Data class to store paths for data ingestion artifacts
 @dataclass
 class DataIngestionArtifact:
-    trained_file_path: str  # Path to the training dataset
-    test_file_path: str  # Path to the testing dataset
+    trained_file_path:str
+    test_file_path:str
 
 @dataclass
 class DataValidationArtifact:
@@ -15,6 +13,7 @@ class DataValidationArtifact:
     invalid_train_file_path: str
     invalid_test_file_path: str
     drift_report_file_path: str
+    
 
 @dataclass
 class DataTransformationArtifact:
@@ -47,5 +46,3 @@ class ModelEvaluationArtifact:
 class ModelPusherArtifact:
     saved_model_path:str
     model_file_path:str
-
-

@@ -164,3 +164,4 @@ logs/*
 Artifacts/*
 networksecurity.egg-info/*
 __pycache__
+saved_models/*
